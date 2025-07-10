@@ -25,7 +25,7 @@
   </script>
 </head>
 
-<body class="bg-[url('./assets/bg.png')] bg-cover bg-center min-h-screen">
+<body class="bg-[url('./assets/bg.png')] ">
   <header class="bg-white/80 backdrop-blur-sm shadow sticky top-0 z-50" data-aos="fade-down">
     <nav class="flex items-center container mx-auto justify-between py-4 px-4">
       <div class="flex items-center gap-3">
@@ -45,9 +45,9 @@
     </nav>
   </header>
 
-  <main class="container mx-auto px-4">
+  <main>
     <!-- Hero Section -->
-    <section class="md:flex items-center justify-between py-16" data-aos="zoom-in">
+    <section class="md:flex items-center justify-between py-16 container mx-auto px-4" data-aos="zoom-in">
       <div class="space-y-5 text-center md:text-left">
         <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
           <span class="text-primary">Empowering</span> students<br>
@@ -65,7 +65,7 @@
     </section>
 
     <!-- Curriculum Section -->
-    <section class="py-16">
+    <section class="py-16 container mx-auto px-4">
       <div class="space-y-10">
         <h2 class="text-3xl md:text-4xl font-bold text-center" data-aos="fade-up">Standard Curriculum</h2>
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 px-4 md:px-10">
@@ -103,62 +103,158 @@
     </section>
 
     <!-- Our Stories Section -->
-    <section class="py-16">
-      <h3 class="text-3xl md:text-4xl font-bold text-center mb-10" data-aos="fade-up">Our Stories</h3>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-     
-      
-        <!-- Left Card -->
-        <div class="relative group  " data-aos="fade-right">
-          <img src="./assets/story-1.png" class="w-full object-cover rounded-lg" alt="">
-          <div class="absolute top-0 left-0 m-4 bg-white text-black px-4 py-1 text-sm font-semibold shadow-md">November 19, 2030
-          </div>
-          <div class="absolute bottom-0 p-6  text-white rounded-b-lg">
-            <h4 class="font-bold text-lg mb-2">A fun toddler coloring training on classroom</h4>
-            <p class="text-sm">Beautiful branding for changes by Never Now in Australia. changes is a platform for open
-              discussion in an inclusive and collaborative environment.</p>
-          </div>
-        </div>
+    <section class="py-16 bg-gradient-to-t from-amber-100">
+      <div class="container mx-auto px-4">
 
 
-        <!-- Right Grid Cards -->
-        <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6" data-aos="fade-left">
-          <!-- Story Card 2 -->
-          <div class="bg-white rounded-lg shadow-md p-4">
-            <img src="./assets/story-1.png" class="rounded-md mb-3" alt="">
-            <p class="text-xs text-gray-500 mb-1">November 20, 2030</p>
-            <h5 class="font-bold text-lg">Interactive Art Workshop</h5>
-            <p class="text-sm text-gray-600">Kids enjoyed a creative session painting their imaginations with colors.
-            </p>
+
+
+
+
+        <h3 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Our Stories</h3>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 px-4 md:px-0">
+          <!-- Featured Left Card -->
+          <div class="relative group bg-white rounded-4xl shadow-lg overflow-hidden p-4" data-aos="fade-right">
+            <img src="./assets/story-1.png"
+              class="w-full h-72 object-cover transform group-hover:scale-105 transition duration-500 rounded-lg"
+              alt="">
+            <div
+              class="absolute top-6 left-6 bg-primary text-white text-xs px-3 py-1 rounded-full font-semibold shadow">
+              Featured</div>
+            <div class="pt-6 space-y-3">
+              <p class="hidden text-xs text-gray-500 bg-slate-100 md:inline-block px-3 py-1 rounded-lg">November 19,
+                2030</p>
+              <h4 class="text-lg font-bold group-hover:text-secondary transition">A fun toddler coloring training on
+                classroom</h4>
+              <p class="text-sm text-gray-600">Beautiful branding for changes by Never Now in Australia.
+                changes is a platform for open discussion in an inclusive and
+                collaborative environment, providing the...</p>
+              <button class="text-sm text-blue-600 font-semibold hover:underline">Read More</button>
+            </div>
           </div>
 
-          <!-- Story Card 3 -->
-          <div class="bg-white rounded-lg shadow-md p-4">
-            <img src="./assets/story-1.png" class="rounded-md mb-3" alt="">
-            <p class="text-xs text-gray-500 mb-1">November 21, 2030</p>
-            <h5 class="font-bold text-lg">Outdoor Science Fair</h5>
-            <p class="text-sm text-gray-600">Students explored science projects and demonstrated their findings.</p>
-          </div>
+          <!-- Other Stories Grid (Spans 2 Columns on lg) -->
+          <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6" data-aos="fade-left">
+            <!-- Story Card 1 -->
+            <div class="bg-white rounded-3xl shadow-md hover:shadow-xl transition p-4 flex flex-col">
+              <div class="relative">
+                <img src="./assets/story-2.png" class="rounded-2xl h-48 w-full object-cover" alt="">
+                <span
+                  class="absolute top-2 left-2 bg-white text-gray-700 text-xs font-medium px-3 py-1 rounded-full shadow">Nov
+                  20, 2030</span>
+              </div>
+              <div class="mt-4 space-y-2">
+                <h5 class="font-bold text-lg text-gray-800">Find out if a school fits the
+                  family’s needs</h5>
 
-          <!-- Story Card 4 -->
-          <div class="bg-white rounded-lg shadow-md p-4">
-            <img src="./assets/story-1.png" class="rounded-md mb-3" alt="">
-            <p class="text-xs text-gray-500 mb-1">November 22, 2030</p>
-            <h5 class="font-bold text-lg">Music & Movement Day</h5>
-            <p class="text-sm text-gray-600">A joyful day full of rhythm, fun, and physical activity.</p>
-          </div>
+                <button class="text-sm text-blue-500 hover:underline font-medium">Explore More</button>
+              </div>
+            </div>
 
-          <!-- Story Card 5 -->
-          <div class="bg-white rounded-lg shadow-md p-4">
-            <img src="./assets/story-1.png" class="rounded-md mb-3" alt="">
-            <p class="text-xs text-gray-500 mb-1">November 23, 2030</p>
-            <h5 class="font-bold text-lg">Reading Club Launch</h5>
-            <p class="text-sm text-gray-600">Children gathered to explore books and develop a love for reading.</p>
+            <!-- Story Card 2 -->
+            <div class="bg-white rounded-3xl shadow-md hover:shadow-xl transition p-4 flex flex-col">
+              <div class="relative">
+                <img src="./assets/story-3.png" class="rounded-2xl h-48 w-full object-cover" alt="">
+                <span
+                  class="absolute top-2 left-2 bg-white text-gray-700 text-xs font-medium px-3 py-1 rounded-full shadow">Nov
+                  20, 2030</span>
+              </div>
+              <div class="mt-4 space-y-2">
+                <h5 class="font-bold text-lg text-gray-800">Summer math & literacy
+                  centres for kids</h5>
+
+                <button class="text-sm text-blue-500 hover:underline font-medium">Explore More</button>
+              </div>
+            </div>
+
+            <!-- Story Card 3 -->
+            <div class="bg-white rounded-3xl shadow-md hover:shadow-xl transition p-4 flex flex-col">
+              <div class="relative">
+                <img src="./assets/story-4.png" class="rounded-2xl h-48 w-full object-cover" alt="">
+                <span
+                  class="absolute top-2 left-2 bg-white text-gray-700 text-xs font-medium px-3 py-1 rounded-full shadow">Nov
+                  20, 2030</span>
+              </div>
+              <div class="mt-4 space-y-2">
+                <h5 class="font-bold text-lg text-gray-800">Classroom management
+                  techniques for new tutors</h5>
+
+                <button class="text-sm text-blue-500 hover:underline font-medium">Explore More</button>
+              </div>
+            </div>
+
+            <!-- Story Card 4 -->
+            <div class="bg-white rounded-3xl shadow-md hover:shadow-xl transition p-4 flex flex-col">
+              <div class="relative">
+                <img src="./assets/story-5.png" class="rounded-2xl h-48 w-full object-cover" alt="">
+                <span
+                  class="absolute top-2 left-2 bg-white text-gray-700 text-xs font-medium px-3 py-1 rounded-full shadow">Nov
+                  20, 2030</span>
+              </div>
+              <div class="mt-4 space-y-2">
+                <h5 class="font-bold text-lg text-gray-800">Conversation rhymes
+                  improve kids listening</h5>
+
+                <button class="text-sm text-blue-500 hover:underline font-medium">Explore More</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="text-center mt-8">
+        <button class="bg-black text-white py-2 px-6 rounded-lg">View All</button>
+      </div>
     </section>
   </main>
+  <footer class="bg-blue-600 text-white">
+    <div class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+  
+      <!-- Logo & Description -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="./assets/logo.png" class="w-12 h-12" alt="Logo">
+          <h6 class="text-2xl font-extrabold">Kids Education</h6>
+        </div>
+        <p class="text-sm leading-relaxed text-white/90">
+          Inspiring young minds with joyful learning, creative activities, and a nurturing environment that shapes their
+          bright future.
+        </p>
+      </div>
+  
+      <!-- About Links -->
+      <div>
+        <h4 class="text-xl font-bold mb-4">About School</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline text-white/90">Home</a></li>
+          <li><a href="#" class="hover:underline text-white/90">About</a></li>
+          <li><a href="#" class="hover:underline text-white/90">Facilities</a></li>
+          <li><a href="#" class="hover:underline text-white/90">Admission</a></li>
+        </ul>
+      </div>
+  
+      <!-- Social Media -->
+      <div>
+        <h4 class="text-xl font-bold mb-4">Keep in Touch</h4>
+        <div class="flex items-center gap-4">
+          <a href="#"><img src="./assets/fb.png" class="w-8 h-8 hover:scale-110 transition-transform" alt="Facebook"></a>
+          <a href="#"><img src="./assets/twitter.png" class="w-8 h-8 hover:scale-110 transition-transform"
+              alt="Twitter"></a>
+          <a href="#"><img src="./assets/google+.png" class="w-8 h-8 hover:scale-110 transition-transform"
+              alt="Google+"></a>
+          <a href="#"><img src="./assets/dribble.png" class="w-8 h-8 hover:scale-110 transition-transform"
+              alt="Dribbble"></a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Bottom Footer -->
+    <div class="text-center py-4 bg-blue-700 text-sm text-white/80">
+      &copy; 2030 Kids Education. All rights reserved.
+    </div>
+  </footer>
+  
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
